@@ -2,7 +2,8 @@
 from cvprac.cvp_client import CvpClient
 import json
 import urllib3
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+urllib3.disable_warnings()
+#urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 def get_logs(clnt):
     data = {
