@@ -23,7 +23,7 @@ def get_logs(clnt):
 
 def main():
     clnt = CvpClient()
-    clnt.connect(['10.81.110.114'], 'cvpadmin', 'cvp123', protocol='https')
+    clnt.connect(['192.168.130.3'], 'cvpadmin', 'pzkpw51B', protocol='https')
 
     logs = get_logs(clnt)
     print json.dumps(logs, indent=4, sort_keys=True)
